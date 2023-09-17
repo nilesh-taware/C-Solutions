@@ -1,0 +1,14 @@
+switch ( integer expression )
+{  
+case {value 1} :  
+do this ;
+ 
+case {value 2} :  
+ do this ;  
+ 
+case {value 3} :  
+do this ;  
+ 
+default :  
+do this ;
+ }

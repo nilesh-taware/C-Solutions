@@ -1,0 +1,29 @@
+#include<stdio.h>
+//Calculate array size
+#define ARRAY_SIZE(a)  sizeof(a)/sizeof(a[0])
+int main()
+{
+    int arr[] = {1,2,3,4,5,6};
+    // length of the array
+    int N = ARRAY_SIZE(arr);
+    // assign the 0 valid index
+    int start = 0;
+    // assign the last valid index
+    int end = (N - 1);
+    int tmp, i;
+    while(start < end)
+    {
+        // swap the elements
+        tmp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = tmp;
+        start++;
+        end--;
+    }
+    // print the reversed array
+    for( i = 0; i < N; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}

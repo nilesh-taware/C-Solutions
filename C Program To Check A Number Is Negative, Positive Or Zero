@@ -1,0 +1,14 @@
+#include<conio.h>
+int main()
+{
+	int n;
+	printf("enter n value:\n");
+	scanf("%d",&n);
+    if(n>0)
+    printf("it is positive number\n");
+    else if(n<0)
+    printf("it is negative number\n");
+    else
+    printf("it is zero\n");
+		
+}

@@ -1,0 +1,23 @@
+//
+//  main.c
+//  functionarg
+//
+//  Created by Nilesh Taware on 22/09/23.
+//
+
+#include <stdio.h>
+int add(int,int);
+
+int main(void)
+{
+    int res=add(50,60);
+    printf("Addition=%d\n",res);
+    
+    
+}
+int add(int x,int y)
+{
+    int result;
+    result=x+y;
+    return result;
+}
